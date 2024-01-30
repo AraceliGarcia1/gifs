@@ -1,4 +1,19 @@
+
 <div class="row">
+  <app-gifs-card
+  *ngFor="let gif of gifs"
+  [gif]="gif"
+  class="col-md-3 col-sm-6"
+  >
+</app-gifs-card>
+</div>
+
+
+
+
+
+
+<!-- <div class="row">
   <div *ngFor="let gif of gifs" class="col-md-3 col-sm-6">
     <div class="card mb-2 text-center bg-dark">
       <img [src]="gif.images.downsized_medium.url" 
@@ -10,12 +25,7 @@
       </div>
     </div>
   </div>
-</div>
+</div> -->
 
 <!-- Listado de Gifs -->
-<ul>
-  <li>Primero</li>
-  <li>Segundo</li>
-  <li>Tercero</li>
-  <li>Cuarto</li>
-</ul>
+
